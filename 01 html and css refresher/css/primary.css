@@ -216,12 +216,12 @@ nav {
 .main-post__image > img {
     display: block;
     transition-property: transform;
-    transition-duration: 0.5s;
-    transition-time-function: ease-out;
+    transition-duration: 0.7s;
+    transition-time-function: ease-in;
 }
 
 .main-post-link:hover .main-post__image > img {
-    transform: scale(1.5);
+    transform: translateY(-80px);
 }
 
 .main-post__text {
@@ -254,19 +254,20 @@ nav {
     content: "";
     position: absolute;
     z-index: -1;
-    left: 0;
-    right: 100%;
+    left: 50%;
+    right: 50%;
     bottom: 0;
     background: #fff;
     height: 4px;
-    transition-property: right;
+    transition-property: left,right;
     transition-duration: 0.3s;
-    transition-timing-function: ease-out;
+    transition-timing-function: ease-in-out;
     transition-delay: 0.2s;
 }
 
 .main-post-link:hover .main-post__text__title:before {
     right: 0;
+    left: 0;
 }
 
 
@@ -321,33 +322,36 @@ nav {
 
 .read-more {
     position: absolute;
-    top: 0;
+    /*top: 0;*/
     bottom: 0;
     left: 0;
     right: 0;
     text-align: center;
     background-color: rgba(8,41,72,0.7);
-    padding-top: 25%;
-    opacity: 0;
+    /*padding-top: 25%;
+    opacity: 0;*/
     color: #fff;
     border-radius: 7px;
-    transition-property: opacity;
-    transition-duration: 0.5s;
-    transition-time-function: ease;
+    height: 0;
+    transition-property: height;
+    transition-duration: 0.35s;
+    transition-time-function: ease-in-out;
 }
 
 .read-more span {
     border: 2px solid #fff;
     display: inline-block;
     padding: 1rem 2rem; 
+    margin-top: 25%;
     transition-property: background;
     transition-duration: 0.5s;
     transition-time-function: ease;
-    transition-delay: 0.2s;
+    transition-delay: 0.15s;
 }
 
 .post-link:hover .read-more {
-    opacity: 1;
+    /*opacity: 1;*/
+    height: 100%;
 }
 
 .post-link:hover .read-more span {
