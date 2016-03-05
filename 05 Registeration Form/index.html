@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html> 
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> 01 HTML and CSS Refresher </title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/primary.css" />
+        <link rel="stylesheet" href="css/form.css" />
+    </head>
+    
+    <body>
+        <header>
+            <div class="l-fixed desktop-menu">
+                <div class="logo">
+                    <img src="images/usalliance_logo.png" />
+                </div>
+                <nav>
+                    <ul>
+                        <li class="menu-item"><a href="#">Products & Services</a></li>
+                        <li class="menu-item"><a href="#">Member Benefits</a></li>
+                        <li class="menu-item"><a href="#">About</a></li>
+                        <li class="menu-item"><a href="#" class="active">Blog</a></li>
+                        <li class="menu-item"><a href="#">Contact Us</a></li>
+                        <li class="menu-item"><a href="#">Sign In</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="mobile-header clearfix">
+                <div class="mobile-menu-btn">
+                    <a href="" class="menu-button" id="js-menu-button"><i class="fa fa-bars"></i><span class="mobile-menu-text">MENU</span></a>
+                </div>
+                <div class="mobile-logo">
+                    <img src="images/usalliance_logo.png" />
+                </div>
+                <div class="mobile-signin-btn">
+                    <a href="#" class="menu-button"><i class="fa fa-user"></i><span class="mobile-menu-text">SIGN IN</span></a>
+                </div>
+                <div class="mobile-menu-list" id="js-mobile-menu">
+                    <ul>
+                        <li class="mobile-menu__item"><a href="#">Products</a></li>
+                        <li class="mobile-menu__item"><a href="#">Services</a></li>
+                        <li class="mobile-menu__item"><a href="#">Member Benefits</a></li>
+                        <li class="mobile-menu__item"><a href="#">About</a></li>
+                        <li class="mobile-menu__item"><a href="#">Blog</a></li>
+                        <li class="mobile-menu__item"><a href="#">Contact Us</a></li>
+                        <li class="mobile-menu__item"><a href="#">Search</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        
+        <div class="body-wrapper">
+            <div class="l-fixed">
+                <div class="form">
+                    <h1>Registration Form</h1>
+                
+
+                    <form id="register" name="myForm" class="register-form">
+                        <label for="name">
+                            <span>Full Name</span>
+                            <input type="text" id="name" name="name" class="input_field" />
+                        </label>
+                        <label for="email">
+                            <span>Email</span>
+                            <input type="text" id="email" name="email" class="input_field" />
+                        </label>
+                        <label for="password">
+                            <span>Password</span>
+                            <input type="password" id="password1" name="password1" class="input_field" />
+                        </label>
+                        <label for="password-verification">
+                            <span>Confirm Password</span>
+                            <input type="password" id="password2" name="password2" class="input_field" />
+                        </label>
+                        
+                        <label for="favorite-color">
+                            <span>Favorite Color</span>
+                        </label>
+                        <ul class="color-list">
+                            <li><input type="radio" id="color1" name="color" value="#E0E0E0" /> <span>#E0E0E0</span><span class="display-color gray"></span></li>
+                            <li><input type="radio" id="color2" name="color" value="#FFCCCC" /> <span>#FFCCCC</span><span class="display-color pink"></span></li>
+                            <li><input type="radio" id="color3" name="color" value="#FFFFCC" /> <span>#FFFFCC</span><span class="display-color yellow"></span></li>
+                            <li><input type="radio" id="color4" name="color" value="#CCFFFF" /> <span>#CCFFFF</span><span class="display-color blue"></span></li>  
+                         </ul>
+                    </form>
+                        <div class="submit-btn clearfix">
+                            <input type="submit" value="Register" onclick="checkForm();" />
+                        </div>
+                    
+                    <div id="form_output"> </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+                
+        <footer class="level-1">
+            <div class="l-fixed">
+                <div class="footer-col col-1">
+                    <h3 class="scoop"><strong>The Scoop</strong></h3>
+                    <p>Depositing checks into your USAlliance account has gotten even easier. USAlliance Mobile Banking users can now use their smartphones to make check deposits. Not a Mobile Banking user? Register today!</p>
+                </div>
+                <div class="footer-col col-2">
+                    <ul>
+                        <li><a href="#">Home</li></a>
+                        <li><a href="#">Products</li></a>
+                        <li><a href="#">Services</li></a>
+                        <li><a href="#">Member Benefits</li></a>
+                        <li><a href="#">ATM/Brance Locator</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col col-3">
+                    <ul>
+                        <li><a href="#">About</li></a>
+                        <li><a href="#">Rates</li></a>
+                        <li><a href="#">Live Chat</li></a>
+                        <li><a href="#">Contact Us</li></a>
+                        <li><a href="#">Careers</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col col-4">
+                    <h3 class="mortgage"><strong>The Jumbo Mortgage Specialists</strong></h3>
+                    <p>If your home buying needs call for a jumbo mortgage, call us first. We offer low rates and a wide range of terms. <a href="#">Get more information.</a></p>
+                </div>
+            </div>
+        </footer>
+        <footer class="level-2">
+            <div class="l-fixed">
+                <div class="footer-col col-1">
+                    <div class="ncua">
+                        <img src="images/equalncualogos.png"> &nbsp;<span> Federally Insured by NCUA</span>                                   </div>
+                </div>
+                <div class="footer-col col-2">
+                    <ul class="footer-lev2-menu one">
+                        <li> <a href="#"> Forms and Disclosures </a> </li>
+                        <li> <a href="#"> Privacy Policy </a></li>
+                        <li> <a href="#"> Fees </a> </li>
+                        <li> <a href="#"> Site Map </a> </li>
+                    </ul>
+                    <ul class="footer-lev2-menu two">
+                        <li> <a href="#"> Terms of Use </a> </li>
+                        <li> <a href="#"> Website Privacy Policy </a> </li>
+                    </ul>
+                    <span> &copy; USALLIANCE Financial. All rights reserved. </span>
+                </div>
+                <div class="footer-col col-3">
+                    <ul class="social-media">
+                        <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="mobile-footer-menu">
+            <ul>
+                <li><a href="#">View Full Site</a></li> &nbsp; | &nbsp;
+                <li><a href="#">Privacy & Security</a></li>
+            </ul>
+        </div>
+        <div class="mobile-footer-text">
+            <span>Federally Insured by NCUA. Equal Housing Lender.
+            <br/>© 2016 USALLIANCE Financial.</span>
+        </div>
+    </body>
+    <script src="js/form.js" type="application/javascript"></script>
+</html>
+    
