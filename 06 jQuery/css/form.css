@@ -1,0 +1,191 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.form > h1 {
+    text-align: center;
+    color: #082b4b;
+    margin-bottom: 3rem;
+}
+
+.register-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.register-form input[type=submit],
+.register-form input[type=button],
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password],
+.register-form label
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password],
+.register-form label {
+    color: #082b4b;
+    font-weight: bold;
+}
+
+.register-form input[type=text],
+.register-form input[type=email],
+.register-form input[type=password] {
+    width: 300px;
+    border: 0;
+    border-bottom: 4px solid #ACACAC;
+}
+
+.register-form label {
+    display:block;
+}
+
+.register-form label:hover input[type=text],
+.register-form label:hover input[type=email],
+.register-form label:hover input[type=password] {
+    border-bottom: 4px solid #333;
+}
+
+.register-form input[type=text]:focus,
+.register-form input[type=email]:focus,
+.register-form input[type=password]:focus {
+    background: #dcfeff;
+    border-bottom: 4px solid #082b4b !important;
+}
+
+.register-form input[type=text].error,
+.register-form input[type=email].error,
+.register-form input[type=password].error {
+    background: #fcc5ca;
+    border-bottom: 4px solid #fa0202 !important;
+}
+
+label.error {
+    color: #fa0202 !important;
+    margin-right: 0 !important;
+    width: 100% !important;
+}
+
+.register-form p {
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.register-form label {
+    display: inline-block;
+    float: left;
+    width: 150px;
+    text-align: right;
+    margin-right: 16px;
+}
+
+.favorite-color {
+    margin-bottom: 1rem !important;
+}
+
+.color-list {
+    margin-top: 0;
+    margin-left: 5rem;
+    color: #082b4b;
+    font-weight: bold;
+}
+
+.display-color {
+    display: inline-block;
+    width: 30px;
+    height: 15px;
+    margin-left: 10px;
+}
+
+.display-color.gray {
+    background-color: #E0E0E0;
+}
+
+.display-color.pink {
+    background-color: #FFCCCC;
+}
+
+.display-color.yellow {
+    background-color: #FFFFCC;
+}
+
+.display-color.blue {
+    background-color: #CCFFFF;
+}
+
+.register-form input[type=radio] {
+    margin-right: 6px;
+}
+
+.submit-btn {
+    width: 500px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+input[type=submit] {
+    color: #fff;
+    background-color: #082b4b;
+    padding: 8px 16px;
+    border: 0;
+    margin-bottom: 15px;
+    margin-top: 3rem;
+   -webkit-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+      -moz-box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+           box-shadow: 2px 2px 5px 0px rgba(50, 50, 50, 0.7);
+}
+
+#form_output {
+    margin-top: 3rem;
+}
+
+.submit {
+    text-align: center;
+    margin: 0rem auto 2rem !important;
+}
+
+#error-color {
+    color: #fa0202;
+}
+
+.output {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 5px solid #082b4b;
+    padding: 2rem 0 1rem;
+}
+
+.output div {
+    overflow: hidden; 
+    margin-bottom: 1rem;
+}
+
+.output div:before,
+.output div:after {
+  display: table;
+  content: '';
+  clear: both; }
+
+.output .title {
+    color: #082b4b;
+    font-weight: bold;
+    float: left;
+    width: 30%;
+    text-align: right;
+    margin-right: 1.5rem;
+}
+
+.output .result {
+    color: #0160b6;
+    float: left;
+}
+
+
+
