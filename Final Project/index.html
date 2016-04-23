@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title> Nutritional Label Maker</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,900' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+         
+    </head>
+    <body>
+        
+        <div class="body-wrapper clearfix">
+            <div class="output-wrapper">
+                <div class="nutrition_label">
+                    <div class="label__heading"> Nutrition Facts</div>
+                    <div class="serving-size">Serving Size</div>
+                    <div class="servings-container">Servings per Container</div>
+                    <div class="divider thick"> </div>
+                    <div class="amount-per-serving underline">Amount per Serving</div>
+                    <div class="calories clearfix">
+                        <div class="calories-content float-left"><span class="calories-content-title">Calories</span> <span class="calories-content-value">X</span></div>
+                        <div class="calories-fat float-right">Calories from Fat <span class="calories-fat-value">X</span></div>
+                    </div>
+                    <div class="divider medium"> </div>
+                    <div class="daily-percentage-value underline">%Daily Value*</div>
+                    <div class="total-fat underline clearfix">
+                        <div class="total-fat-content float-left"><span class="total-fat-content-title content-title">Total Fat</span> <span class="total-fat-content-value">Xg</span></div>
+                        <div class="total-fat-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="sat-fat underline clearfix">
+                        <div class="sat-fat-content float-left"><span class="sat-fat-content-title">Saturated Fat</span> <span class="sat-fat-content-value">Xg</span></div>
+                        <div class="sat-fat-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="trans-fat underline clearfix">
+                        <div class="trans-fat-content float-left"><span class="trans-fat-content-title"><em>Trans</em> Fat</span> <span class="trans-fat-content-value">Xg</span></div>
+                        
+                    </div>
+                    <div class="cholesterol underline clearfix">
+                        <div class="cholesterol-content float-left"><span class="cholesterol-content-title content-title">Cholesterol</span> <span class="cholesterol-content-value">Xg</span></div>
+                        <div class="cholesterol-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="sodium underline clearfix">
+                        <div class="sodium-content float-left"><span class="sodium-content-title content-title">Sodium</span> <span class="sodium-content-value">Xg</span></div>
+                        <div class="sodium-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="potassium underline clearfix">
+                        <div class="potassium-content float-left"><span class="potassium-content-title content-title">Potassium</span> <span class="potassium-content-value">Xg</span></div>
+                        <div class="potassium-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="carb underline clearfix">
+                        <div class="carb-content float-left"><span class="carb-content-title content-title">Total Carbohydrate</span> <span class="carb-content-value">Xg</span></div>
+                        <div class="carb-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="fiber underline clearfix">
+                        <div class="fiber-content float-left"><span class="fiber-content-title">Dietary Fiber</span> <span class="fiber-content-value">Xg</span></div>
+                        <div class="fiber-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="sugars underline clearfix">
+                        <div class="sugars-content float-left"><span class="sugars-content-title">Sugars</span> <span class="sugars-content-value">Xg</span></div>
+                        
+                    </div>
+                    <div class="protein clearfix">
+                        <div class="protein-content float-left"><span class="protein-content-title content-title">Protein</span> <span class="protein-content-value">Xg</span></div>
+                        <div class="protein-percent float-right"><span class="percent-value">X</span>%</div>
+                    </div>
+                    <div class="divider medium"> </div>
+                </div>
+                
+                <div class="buttons">
+                    <input type="button" class="button blue as-image" value="Save as Image" /> 
+                    <input type="button" class="button blue as-pdf" value="Save as PDF" />
+                </div>
+                
+            </div>
+            
+            <div class="form-wrapper">
+                <h1 class="title">Nutritional Label Maker</h1>
+                <form action="" method="post" class="nutrition-form">
+                    <div class="label-style clearfix">
+                        <h2>Label Style</h2>
+                        <div class="col-left">
+                            <label>
+                                <span>Font Color </span>
+                                <input id="font-color" type="text" name="font-color" placeholder="#Hex Value" />
+                            </label>
+
+                            <label>
+                                <span>Background Color</span>
+                                <input id="background-color" type="email" name="background-color" placeholder="#Hex Value" />
+                            </label>
+                            <label>
+                                <span>Border and Lines Color</span>
+                                <input id="lines-color" type="email" name="lines-color" placeholder="#Hex Value" />
+                            </label>
+                        </div>
+                    </div>
+                    <div class="nutritions clearfix">
+                        <h2>Nutritions</h2>
+                        <div class="col-left">
+                            <label>
+                                <span>Serving Size </span>
+                                <input id="serving-size" type="text" name="serving-size" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Calories </span>
+                                <input id="calories" type="text" name="calories" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Total Fat (g) </span>
+                                <input id="total-fat" type="text" name="total-fat" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Trans Fat (g) </span>
+                                <input id="trans-fat" type="text" name="trans-fat" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Sodium (mg) </span>
+                                <input id="sodium" type="text" name="sodium" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Total Carbohydate (g) </span>
+                                <input id="carbohydate" type="text" name="carbohydate" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Sugars (g) </span>
+                                <input id="sugars" type="text" name="sugars" placeholder="" />
+                            </label>
+                        </div>
+                        <div class="col-right">
+                            <label>
+                                <span>Servings per Container </span>
+                                <input id="servings-container" type="text" name="servings-container" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Calories from Fat </span>
+                                <input id="calories-fat" type="text" name="calories-fat" placeholder="" />
+                            </label>
+                             <label>
+                                <span>Saturated Fat (g) </span>
+                                <input id="saturated-fat" type="text" name="saturated-fat" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Cholesterol (mg) </span>
+                                <input id="cholesterol" type="text" name="cholesterol" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Potassium (mg) </span>
+                                <input id="potassium" type="text" name="potassium" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Dietary Fiber (g) </span>
+                                <input id="dietary-fiber" type="text" name="dietary-fiber" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Protein (g) </span>
+                                <input id="protein" type="text" name="protein" placeholder="" />
+                            </label>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="vitamins clearfix">
+                        <h2>Vitamins</h2>
+                        <div class="col-left">
+                            <label>
+                                <span>Vitamin A (%)</span>
+                                <input id="vitamin-a" type="text" name="vitamin-a" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Calcium (%)</span>
+                                <input id="calcium" type="text" name="calcium" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Vitamin D (%)</span>
+                                <input id="vitamin-d" type="text" name="vitamin-d" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Vitamin K (%)</span>
+                                <input id="vitamin-k" type="text" name="vitamin-k" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Riboflavin (%)</span>
+                                <input id="riboflavin" type="text" name="riboflavin" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Vitamin B12 (%)</span>
+                                <input id="vitamin-b12" type="text" name="vitamin-b12" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Vitamin B6 (%)</span>
+                                <input id="vitamin-b6" type="text" name="vitamin-b6" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Phosphorus (%)</span>
+                                <input id="phosphorus" type="text" name="phosphorus" placeholder="" />
+                            </label>
+                        </div>
+                        <div class="col-right">
+                            <label>
+                                <span>Vitamin C (%)</span>
+                                <input id="vitamin-c" type="text" name="vitamin-c" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Iron (%)</span>
+                                <input id="iron" type="text" name="iron" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Vitamin E (%)</span>
+                                <input id="vitamin-e" type="text" name="vitamin-e" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Thiamin (%)</span>
+                                <input id="thiamin" type="text" name="thiamin" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Niacin (%)</span>
+                                <input id="niacin" type="text" name="niacin" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Pantothenic Acid (%)</span>
+                                <input id="pantothenic-acid" type="text" name="pantothenic-acid" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Magnesium (%)</span>
+                                <input id="magnesium" type="text" name="magnesium" placeholder="" />
+                            </label>
+                            <label>
+                                <span>Zinc (%)</span>
+                                <input id="zinc" type="text" name="zinc" placeholder="" />
+                            </label>
+                        </div>
+                    </div> 
+                    -->
+                    <div class="buttons">
+                        <input type="button" class="button clear" value="Clear" /> 
+                        <input type="button" class="button generate" value="Generate" /> 
+                        <!--<input type="button" class="button as-image" value="Save as Image" /> 
+                        <input type="button" class="button as-pdf" value="Save as PDF" /> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="js/html2canvas.min.js"></script>
+        <script src="js/html2canvas.svg.min.js"></script>
+        <script src="js/code.js"></script>
+        
+        
+    </body>
+</html>
