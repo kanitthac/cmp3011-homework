@@ -121,13 +121,19 @@ body {
 
 .title {
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 3.3em;
     border-bottom: 4px dashed #fff;
+}
+
+.version {
+    font-size: 0.5em;
 }
 
 .nutrition-form label {
     display: block;
-    margin: 0px 0px 15px;
+    /*margin: 0px 0px 15px;*/
+    padding: 15px 0 7px;
+    position: relative;
 }
 .nutrition-form label>span {
     float: left;
@@ -137,7 +143,8 @@ body {
     margin-top: 10px;
     font-weight: bold;
 }
-.nutrition-form input[type="text"], .nutrition-form input[type="email"], .nutrition-form textarea, .nutrition-form select {
+
+.nutrition-form input[type="text"], .nutrition-form textarea, .nutrition-form select {
     border: 1px solid #CCC;
     color: #888;
     height: 20px;
@@ -195,6 +202,7 @@ input[type="button"],
 .button.blue:hover {
     box-shadow: inset 0 0 0 3px #fff;
 }
+
 
 /* ==========================================================================
    Nutrition Label
@@ -265,6 +273,21 @@ input[type="button"],
     padding-left: 10px;
 }
 
+.warning_message {
+    color: #fff;
+    font-size: 0.8rem;
+    position: absolute;
+    background-color: red;
+    border-radius: 5px;
+    font-weight: normal !important;
+    bottom: 0;
+    right: 30px;
+}
+
+.as-image {
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
 
 
 

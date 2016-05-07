@@ -15,149 +15,149 @@
         
         <div class="body-wrapper clearfix">
             <div class="output-wrapper">
-                <div class="nutrition_label">
+                <div class="nutrition_label" id="nutrition_label">
                     <div class="label__heading"> Nutrition Facts</div>
-                    <div class="serving-size">Serving Size</div>
-                    <div class="servings-container">Servings per Container</div>
+                    <div class="serving-size">Serving Size: <span id="serving-size-value"></span></div>
+                    <div class="servings-container">Servings per Container: <span id="servings-container-value"></span></div>
                     <div class="divider thick"> </div>
                     <div class="amount-per-serving underline">Amount per Serving</div>
                     <div class="calories clearfix">
-                        <div class="calories-content float-left"><span class="calories-content-title">Calories</span> <span class="calories-content-value">X</span></div>
-                        <div class="calories-fat float-right">Calories from Fat <span class="calories-fat-value">X</span></div>
+                        <div class="calories-content float-left"><span class="calories-content-title">Calories</span> <span class="calories-content-value" id="calories-value">X</span></div>
+                        <div class="calories-fat float-right">Calories from Fat <span class="calories-fat-value" id="calories-fat-value">X</span></div>
                     </div>
                     <div class="divider medium"> </div>
                     <div class="daily-percentage-value underline">%Daily Value*</div>
                     <div class="total-fat underline clearfix">
-                        <div class="total-fat-content float-left"><span class="total-fat-content-title content-title">Total Fat</span> <span class="total-fat-content-value">Xg</span></div>
-                        <div class="total-fat-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="total-fat-content float-left"><span class="total-fat-content-title content-title">Total Fat</span> <span class="total-fat-content-value" id="total-fat-value">X</span>g</div>
+                        <div class="total-fat-percent float-right"><span class="percent-value" id="total-fat-value-percentage">X</span>%</div>
                     </div>
                     <div class="sat-fat underline clearfix">
-                        <div class="sat-fat-content float-left"><span class="sat-fat-content-title">Saturated Fat</span> <span class="sat-fat-content-value">Xg</span></div>
-                        <div class="sat-fat-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="sat-fat-content float-left"><span class="sat-fat-content-title">Saturated Fat</span> <span class="sat-fat-content-value" id="sat-fat-value">X</span>g</div>
+                        <div class="sat-fat-percent float-right"><span class="percent-value" id="sat-fat-value-percentage">X</span>%</div>
                     </div>
                     <div class="trans-fat underline clearfix">
-                        <div class="trans-fat-content float-left"><span class="trans-fat-content-title"><em>Trans</em> Fat</span> <span class="trans-fat-content-value">Xg</span></div>
+                        <div class="trans-fat-content float-left"><span class="trans-fat-content-title"><em>Trans</em> Fat</span> <span class="trans-fat-content-value" id="trans-fat-value">X</span>g</div>
                         
                     </div>
                     <div class="cholesterol underline clearfix">
-                        <div class="cholesterol-content float-left"><span class="cholesterol-content-title content-title">Cholesterol</span> <span class="cholesterol-content-value">Xg</span></div>
-                        <div class="cholesterol-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="cholesterol-content float-left"><span class="cholesterol-content-title content-title">Cholesterol</span> <span class="cholesterol-content-value" id="cholesterol-value">X</span>mg</div>
+                        <div class="cholesterol-percent float-right"><span class="percent-value" id="cholesterol-value-percentage">X</span>%</div>
                     </div>
                     <div class="sodium underline clearfix">
-                        <div class="sodium-content float-left"><span class="sodium-content-title content-title">Sodium</span> <span class="sodium-content-value">Xg</span></div>
-                        <div class="sodium-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="sodium-content float-left"><span class="sodium-content-title content-title">Sodium</span> <span class="sodium-content-value" id="sodium-value">X</span>mg</div>
+                        <div class="sodium-percent float-right"><span class="percent-value" id="sodium-value-percentage">X</span>%</div>
                     </div>
                     <div class="potassium underline clearfix">
-                        <div class="potassium-content float-left"><span class="potassium-content-title content-title">Potassium</span> <span class="potassium-content-value">Xg</span></div>
-                        <div class="potassium-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="potassium-content float-left"><span class="potassium-content-title content-title">Potassium</span> <span class="potassium-content-value" id="potassium-value">X</span>mg</div>
+                        <div class="potassium-percent float-right"><span class="percent-value" id="potassium-value-percentage">X</span>%</div>
                     </div>
                     <div class="carb underline clearfix">
-                        <div class="carb-content float-left"><span class="carb-content-title content-title">Total Carbohydrate</span> <span class="carb-content-value">Xg</span></div>
-                        <div class="carb-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="carb-content float-left"><span class="carb-content-title content-title">Total Carbohydrate</span> <span class="carb-content-value" id="carb-value">X</span>g</div>
+                        <div class="carb-percent float-right"><span class="percent-value" id="carb-value-percentage">X</span>%</div>
                     </div>
                     <div class="fiber underline clearfix">
-                        <div class="fiber-content float-left"><span class="fiber-content-title">Dietary Fiber</span> <span class="fiber-content-value">Xg</span></div>
-                        <div class="fiber-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="fiber-content float-left"><span class="fiber-content-title">Dietary Fiber</span> <span class="fiber-content-value" id="fiber-value">X</span>g</div>
+                        <div class="fiber-percent float-right"><span class="percent-value" id="fiber-value-percentage">X</span>%</div>
                     </div>
                     <div class="sugars underline clearfix">
-                        <div class="sugars-content float-left"><span class="sugars-content-title">Sugars</span> <span class="sugars-content-value">Xg</span></div>
+                        <div class="sugars-content float-left"><span class="sugars-content-title">Sugars</span> <span class="sugars-content-value" id="sugars-value">X</span>g</div>
                         
                     </div>
                     <div class="protein clearfix">
-                        <div class="protein-content float-left"><span class="protein-content-title content-title">Protein</span> <span class="protein-content-value">Xg</span></div>
-                        <div class="protein-percent float-right"><span class="percent-value">X</span>%</div>
+                        <div class="protein-content float-left"><span class="protein-content-title content-title">Protein</span> <span class="protein-content-value" id="protein-value">X</span>g</div>
+                        <div class="protein-percent float-right"><span class="percent-value" id="protein-value-percentage">X</span>%</div>
                     </div>
                     <div class="divider medium"> </div>
                 </div>
                 
                 <div class="buttons">
-                    <input type="button" class="button blue as-image" value="Save as Image" /> 
-                    <input type="button" class="button blue as-pdf" value="Save as PDF" />
+                    <a id="btn-Convert-Html2Image" href="#" class="button blue as-image">Save as Image</a>
+                    <!--<input type="button" class="button blue as-pdf" value="Save as PDF" />-->
                 </div>
                 
             </div>
             
             <div class="form-wrapper">
-                <h1 class="title">Nutritional Label Maker</h1>
-                <form action="" method="post" class="nutrition-form">
-                    <div class="label-style clearfix">
+                <h1 class="title">Nutritional Label Maker <span class="version">v1.0</span></h1>
+                <form action="" method="post" class="nutrition-form" name="nutrition-form">
+                    <!--<div class="label-style clearfix">
                         <h2>Label Style</h2>
                         <div class="col-left">
                             <label>
                                 <span>Font Color </span>
-                                <input id="font-color" type="text" name="font-color" placeholder="#Hex Value" />
+                                <input id="font-color" type="text" name="font-color" value="black" data-original-value="black" />
                             </label>
 
                             <label>
                                 <span>Background Color</span>
-                                <input id="background-color" type="email" name="background-color" placeholder="#Hex Value" />
+                                <input id="background-color" type="text" name="background-color" value="transparent" data-original-value="transparent" />
                             </label>
                             <label>
                                 <span>Border and Lines Color</span>
-                                <input id="lines-color" type="email" name="lines-color" placeholder="#Hex Value" />
+                                <input id="lines-color" type="text" name="lines-color" value="black" data-original-value="black" />
                             </label>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="nutritions clearfix">
                         <h2>Nutritions</h2>
                         <div class="col-left">
                             <label>
                                 <span>Serving Size </span>
-                                <input id="serving-size" type="text" name="serving-size" placeholder="" />
+                                <input id="serving-size" type="text" name="serving-size" value="1 Container" />
                             </label>
                             <label>
                                 <span>Calories </span>
-                                <input id="calories" type="text" name="calories" placeholder="" />
+                                <input id="calories" class="number_only" type="text" name="calories" value="0" data-original-value="0" /><span class="warning_message" id="cal_error_message"></span>
                             </label>
                             <label>
                                 <span>Total Fat (g) </span>
-                                <input id="total-fat" type="text" name="total-fat" placeholder="" />
+                                <input id="total-fat" class="number_only" type="text" name="total-fat" value="0" data-original-value="0" /><span class="warning_message" id="total_fat_error_message"></span>
                             </label>
                             <label>
                                 <span>Trans Fat (g) </span>
-                                <input id="trans-fat" type="text" name="trans-fat" placeholder="" />
+                                <input id="trans-fat" type="text" name="trans-fat" value="0" data-original-value="0" /><span class="warning_message" id="trans_fat_error_message"></span>
                             </label>
                             <label>
                                 <span>Sodium (mg) </span>
-                                <input id="sodium" type="text" name="sodium" placeholder="" />
+                                <input id="sodium" type="text" name="sodium" value="0" data-original-value="0" /><span class="warning_message" id="sodium_error_message"></span>
                             </label>
                             <label>
                                 <span>Total Carbohydate (g) </span>
-                                <input id="carbohydate" type="text" name="carbohydate" placeholder="" />
+                                <input id="carbohydate" type="text" name="carbohydate" value="0" data-original-value="0" /><span class="warning_message" id="carb_error_message"></span>
                             </label>
                             <label>
                                 <span>Sugars (g) </span>
-                                <input id="sugars" type="text" name="sugars" placeholder="" />
+                                <input id="sugars" type="text" name="sugars" value="0" data-original-value="0" /><span class="warning_message" id="sugars_error_message"></span>
                             </label>
                         </div>
                         <div class="col-right">
                             <label>
                                 <span>Servings per Container </span>
-                                <input id="servings-container" type="text" name="servings-container" placeholder="" />
+                                <input id="servings-container" type="text" name="servings-container" value="1" data-original-value="1" />
                             </label>
                             <label>
                                 <span>Calories from Fat </span>
-                                <input id="calories-fat" type="text" name="calories-fat" placeholder="" />
+                                <input id="calories-fat" type="text" name="calories-fat" value="0" data-original-value="0" /><span class="warning_message" id="cal_fat_error_message"></span>
                             </label>
                              <label>
                                 <span>Saturated Fat (g) </span>
-                                <input id="saturated-fat" type="text" name="saturated-fat" placeholder="" />
+                                <input id="sat-fat" type="text" name="sat-fat" value="0" data-original-value="0" /><span class="warning_message" id="sat_fat_error_message"></span>
                             </label>
                             <label>
                                 <span>Cholesterol (mg) </span>
-                                <input id="cholesterol" type="text" name="cholesterol" placeholder="" />
+                                <input id="cholesterol" type="text" name="cholesterol" value="0" data-original-value="0" /><span class="warning_message" id="cholesterol_error_message"></span>
                             </label>
                             <label>
                                 <span>Potassium (mg) </span>
-                                <input id="potassium" type="text" name="potassium" placeholder="" />
+                                <input id="potassium" type="text" name="potassium" value="0" data-original-value="0" /><span class="warning_message" id="potassium_error_message"></span>
                             </label>
                             <label>
                                 <span>Dietary Fiber (g) </span>
-                                <input id="dietary-fiber" type="text" name="dietary-fiber" placeholder="" />
+                                <input id="fiber" type="text" name="fiber" value="0" data-original-value="0" /><span class="warning_message" id="fiber_error_message"></span>
                             </label>
                             <label>
                                 <span>Protein (g) </span>
-                                <input id="protein" type="text" name="protein" placeholder="" />
+                                <input id="protein" type="text" name="protein" value="0" data-original-value="0" /><span class="warning_message" id="protein_error_message"></span>
                             </label>
                         </div>
                     </div>
@@ -235,22 +235,41 @@
                     </div> 
                     -->
                     <div class="buttons">
-                        <input type="button" class="button clear" value="Clear" /> 
-                        <input type="button" class="button generate" value="Generate" /> 
-                        <!--<input type="button" class="button as-image" value="Save as Image" /> 
-                        <input type="button" class="button as-pdf" value="Save as PDF" /> -->
+                        <input type="reset" class="button clear" value="Clear" /> 
+                        <input id="generate-btn" type="button" name="submit" class="button generate" value="Generate" onclick="validateForm();" /> 
+                        
                     </div>
                 </form>
             </div>
         </div>
+        
+        
 
         
-        
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-        <script src="js/html2canvas.min.js"></script>
-        <script src="js/html2canvas.svg.min.js"></script>
+        <script src="js/html2canvas.js"></script>
         <script src="js/code.js"></script>
-        
+        <script>
+            var element = $("#nutrition_label"); // global variable
+            var getCanvas; // global variable
+ 
+            $("#generate-btn").on('click', function () {
+                 html2canvas(element, {
+                 onrendered: function (canvas) {
+                        //$("#previewImage").append(canvas);
+                        getCanvas = canvas;
+                     }
+                 });
+            });
+
+            $("#btn-Convert-Html2Image").on('click', function () {
+                var imgageData = getCanvas.toDataURL("image/png");
+                // Now browser starts downloading it instead of just showing it
+                var newData = imgageData.replace(/^data:image\/png/, "data:application/octet-stream");
+                $("#btn-Convert-Html2Image").attr("download", "label_name.png").attr("href", newData);
+            });
+            
+        </script> 
         
     </body>
 </html>
